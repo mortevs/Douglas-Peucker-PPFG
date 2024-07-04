@@ -13,7 +13,7 @@ st.set_page_config(
             This application was made to decimate the PPFG 
             
             **Created by:** Morten Vier Simensen  
-            **Contact:** Morten.vier.simensen@akerbp.com
+            **Contact:** Morten.viersi@gmail.com
         """
     }
 )
