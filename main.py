@@ -52,7 +52,7 @@ def plot(df):
             buttons=all_buttons
         )],
         showlegend=True,
-        xaxis_title="Pressure [bara]",  # X-axis title
+        xaxis_title="S.G",  # X-axis title
         yaxis_title="Depth",            # Y-axis title
         height=850
     )
