@@ -54,7 +54,7 @@ def plot(df):
         showlegend=True,
         xaxis_title="S.G.",  # X-axis title
         yaxis_title="Depth",            # Y-axis title
-        yaxis=dict(autorange='reversed'),
+        yaxis = dict(autorange="reversed"),
         height=850
     )
     fig = st.plotly_chart(fig, use_container_width=True)
@@ -109,8 +109,8 @@ def plot_with_points(df2, df):
         showlegend=True,
         xaxis_title="S.G.",  # X-axis title
         yaxis_title="Depth",            # Y-axis title
-        yaxis=dict(autorange='reversed'),
-        height=850
+        yaxis = dict(autorange="reversed"),
+        height=850,
     )
     fig = st.plotly_chart(fig, use_container_width=True)
     return fig 
