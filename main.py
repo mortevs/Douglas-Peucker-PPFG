@@ -53,7 +53,7 @@ def plot(df):
         )],
         showlegend=True,
         xaxis_title="S.G.",  # X-axis title
-        yaxis_title="Depth m TVD RKB",            # Y-axis title
+        yaxis_title="Depth m",            # Y-axis title
         yaxis=dict(autorange="reversed"),
 
         height=850
@@ -109,7 +109,7 @@ def plot_with_points(df2, df):
         )],
         showlegend=True,
         xaxis_title="S.G.",  # X-axis title
-        yaxis_title="Depth m TVD RKB",            # Y-axis title
+        yaxis_title="Depth m",            # Y-axis title
         yaxis=dict(autorange="reversed"),
         height=850,
     )
