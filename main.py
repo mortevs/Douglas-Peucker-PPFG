@@ -149,7 +149,6 @@ if uploaded_file is not None:
     msg = st.warning("Making calculations, have a few seconds patience")
     size = len(df.index)
     df2 = pd.DataFrame(index=df.index, columns=[column for column in df])
-    st.write(df2)
     df2[:] = np.nan
     plot_placeholder = st.empty()
     df4 = pd.DataFrame(index = range(size))
@@ -170,7 +169,7 @@ if uploaded_file is not None:
         simplified_points = len(df3[column])
         reduction_percentage = (1 - simplified_points / original_points) * 100
         st.markdown(f"**{column}**: Number of points reduced from {original_points} to {simplified_points} ({reduction_percentage:.2f}% reduction)")
-        df3['TVD BRT'] = df2.loc[df3.index, 'TVD BRT']
+        df3['TVD BRT'] = df.loc[df3.index, 'TVD BRT']
         st.dataframe(df3)
         i+=3
     with plot_placeholder.container():
@@ -179,6 +178,7 @@ if uploaded_file is not None:
 st.write(" ")
 st.write(" ")
 st.write("Created by Morten Vier Simensen")
+
 
 
 
