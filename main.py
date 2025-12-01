@@ -109,7 +109,7 @@ def plot_with_points(df2, df):
         )],
         showlegend=True,
         xaxis_title="S.G.",  # X-axis title
-        yaxis_title="Depth m",            # Y-axis title
+        yaxis_title="Depth m MD",            # Y-axis title
         yaxis=dict(autorange="reversed"),
         height=850,
     )
@@ -149,6 +149,7 @@ if uploaded_file is not None:
     msg = st.warning("Making calculations, have a few seconds patience")
     size = len(df.index)
     df2 = pd.DataFrame(index=df.index, columns=[column for column in df])
+    st.write(df2)
     df2[:] = np.nan
     plot_placeholder = st.empty()
     df4 = pd.DataFrame(index = range(size))
@@ -178,6 +179,7 @@ if uploaded_file is not None:
 st.write(" ")
 st.write(" ")
 st.write("Created by Morten Vier Simensen")
+
 
 
 
